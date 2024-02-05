@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 
-func encrypt(key int ,plainText string){
+func encrypt(key int ,plainText string)(result string){
 	
 }
 

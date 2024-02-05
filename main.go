@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+
+func encrypt(key int ,plainText string){
+	
+}
+
 func main() {
 	plainText := "HELLOWORLD"
 	fmt.Println("Plain Text : ", plainText)

@@ -7,7 +7,20 @@ func encrypt(key int ,plainText string)(result string){
 	
 }
 
-func decrypt(key int ,encryptedText string){}
+
+
+func decrypt(key int ,encryptedText string)(result exam){
+
+
+
+
+	
+}
+
+
+
+
+
 func main() {
 	plainText := "HELLOWORLD"
 	fmt.Println("Plain Text : ", plainText)

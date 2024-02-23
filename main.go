@@ -2,18 +2,15 @@ package main
 
 import "fmt"
 
+const originalLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 func encrypt(key int, plainText string) (result string) {
-
-
-
-
 
 }
 
+func hashLetterFn(key int,letter string) {}
+
 func decrypt(key int, encryptedText string) (result string) {
-
-
-
 
 }
 
@@ -22,10 +19,8 @@ func main() {
 	fmt.Println("Plain Text : ", plainText)
 	encrypted := encrypt(5, plainText)
 
-	fmt.Printf("Encrypted Text",encrypted)
+	fmt.Printf("Encrypted Text", encrypted)
 
-
-
-	decrypted:=decrypt(5,encrypted)
-	fmt.Printf(decrypted)
+	decrypted := decrypt(5, encrypted)
+	fmt.Printf("Decrypted : ", decrypted)
 }

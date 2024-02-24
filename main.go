@@ -8,7 +8,7 @@ func encrypt(key int, plainText string) (result string) {
 
 }
 
-func hashLetterFn(key int,letter string) {}
+func hashLetterFn(key int, letter string) (result string){}
 
 func decrypt(key int, encryptedText string) (result string) {
 

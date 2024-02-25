@@ -6,6 +6,9 @@ const originalLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 func encrypt(key int, plainText string) (result string) {
 
+hasLetter:=hashLetterFn(key,originalLetter)
+
+
 }
 
 func hashLetterFn(key int, letter string) (result string){}

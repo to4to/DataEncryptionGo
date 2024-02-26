@@ -1,17 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 const originalLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 func encrypt(key int, plainText string) (result string) {
 
-hasLetter:=hashLetterFn(key,originalLetter)
+	hasLetter := hashLetterFn(key, originalLetter)
+	var hashString = ""
 
+	strings.Map(findOne,plainText)
 
 }
 
-func hashLetterFn(key int, letter string) (result string){}
+func hashLetterFn(key int, letter string) (result string) {}
 
 func decrypt(key int, encryptedText string) (result string) {
 

@@ -11,6 +11,10 @@ func encrypt(key int, plainText string) (result string) {
 
 	hasLetter := hashLetterFn(key, originalLetter)
 	var hashString = ""
+findOne:=func (r rune)  rune{
+	
+}
+
 
 	strings.Map(findOne,plainText)
 

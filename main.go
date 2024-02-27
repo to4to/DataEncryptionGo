@@ -20,7 +20,13 @@ findOne:=func (r rune)  rune{
 
 }
 
-func hashLetterFn(key int, letter string) (result string) {}
+func hashLetterFn(key int, letter string) (result string) {
+
+runes:=[]rune(letter)
+
+
+
+}
 
 func decrypt(key int, encryptedText string) (result string) {
 

@@ -24,7 +24,7 @@ func hashLetterFn(key int, letter string) (result string) {
 
 runes:=[]rune(letter)
 
-lastLetterKey:=string(runes[len(letter)])
+lastLetterKey:=string(runes[len(letter)-key:len(letter)])
 
 
 

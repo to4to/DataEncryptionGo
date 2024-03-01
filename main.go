@@ -12,7 +12,7 @@ func encrypt(key int, plainText string) (result string) {
 	hasLetter := hashLetterFn(key, originalLetter)
 	var hashString = ""
 	findOne := func(r rune) rune {
-
+		pos := strings.Index(originalLetter, string([]rune{r}))
 	}
 
 	strings.Map(findOne, plainText)
@@ -26,7 +26,7 @@ func hashLetterFn(key int, letter string) (result string) {
 	lastLetterKey := string(runes[len(letter)-key : len(letter)])
 	leftOverLetters := string(runes[0 : len(letter)-key])
 
-	return fmt.Sprintf(`%s%s`,lastLetterKey,leftOverLetters)
+	return fmt.Sprintf(`%s%s`, lastLetterKey, leftOverLetters)
 
 }
 

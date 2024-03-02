@@ -13,6 +13,12 @@ func encrypt(key int, plainText string) (result string) {
 	var hashString = ""
 	findOne := func(r rune) rune {
 		pos := strings.Index(originalLetter, string([]rune{r}))
+     
+		 if pos!= -1 {
+			
+		 }
+
+return r
 	}
 
 	strings.Map(findOne, plainText)

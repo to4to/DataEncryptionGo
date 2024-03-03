@@ -9,13 +9,14 @@ const originalLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 func encrypt(key int, plainText string) (result string) {
 
-	hasLetter := hashLetterFn(key, originalLetter)
-	var hashString = ""
+	hashLetter := hashLetterFn(key, originalLetter)
+	var hashedString = ""
 	findOne := func(r rune) rune {
 		pos := strings.Index(originalLetter, string([]rune{r}))
      
 		 if pos!= -1 {
-			
+			letterPosition:=(pos+len(originalLetter))%len(originalLetter)
+			hashedString=hashedString+string(hashLetter[letterPosition])
 		 }
 
 return r

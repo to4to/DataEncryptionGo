@@ -23,7 +23,7 @@ return r
 	}
 
 	strings.Map(findOne, plainText)
-return hashString
+return hashedString
 }
 
 func hashLetterFn(key int, letter string) (result string) {

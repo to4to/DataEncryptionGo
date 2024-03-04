@@ -38,8 +38,15 @@ func hashLetterFn(key int, letter string) (result string) {
 }
 
 func decrypt(key int, encryptedText string) (result string) {
-	hashLetter:=   hashLetterFn(key,originalLetter)
-	var hashedString=""
+	hashLetter := hashLetterFn(key, originalLetter)
+	var hashedString = ""
+	findOne := func(r rune) rune {
+		pos := strings.Index(hashLetter)
+	}
+
+	strings.Map(findOne, encryptedText)
+
+	return hashedString
 }
 
 func main() {

@@ -47,6 +47,7 @@ func decrypt(key int, encryptedText string) (result string) {
 			letterPosition := (pos + len(originalLetter)) % len(originalLetter)
 
 			hashedString = hashedString + string(originalLetter[letterPosition])
+			return r
 		}
 		return r
 
